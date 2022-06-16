@@ -1,4 +1,10 @@
 .header {
     display: flex; /* or inline-flex */
     justify-content: space-between;
-  }
+}
+
+h1 {
+  font-family: futura-pt, sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}

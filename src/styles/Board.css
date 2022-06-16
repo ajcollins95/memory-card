@@ -1,4 +1,6 @@
 .board {
     border: darkblue;
     border-style: solid;
+    display: flex;
+    flex-wrap: wrap;
 }

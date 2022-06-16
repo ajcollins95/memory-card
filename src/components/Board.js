@@ -20,19 +20,111 @@ import img_Toro from '../assets/ToroLogo.jpg'
 import img_WC from '../assets/WildCardLogo_Color.jpg'
 
 const Board = (props) => {
-    const [fieldText, setFieldText] = useState('')
-    const current = 3;
-    const high = 5;
-    const fieldName = props.fieldName
+    //metadata for teams
+    const teamData = [
+      {
+        name: 'Philadelphia AMP',
+        city: 'Philadelphia, PA',
+        img: img_AMP
+      },
+      {
+        name: 'Seattle BFG',
+        city: 'Seattle, Washington',
+        img: img_BFG
+      },
+      {
+        name: 'Columbus Cocktails',
+        city: 'Columbus, OH',
+        img: img_CC
+      },
+      {
+        name: "Minneapolis Drag'n Thrust",
+        city: 'Minneapolis, MN',
+        img: img_DnT
+      },
+      {
+        name: 'San Francisco Mischief',
+        city: 'San Francisco, CA',
+        img: img_Mis
+      },
+      {
+        name: 'Seattle Mixtape',
+        city: 'Seattle, WA',
+        img: img_Mix
+      },
+      {
+        name: 'Montana Moondog',
+        city: 'Montana, MT',
+        img: img_MD
+      },
+      {
+        name: 'San Francisco Polar Bears',
+        city: 'San Francisco, CA',
+        img: img_PB
+      },
+      {
+        name: 'Dallas Public Enemy',
+        city: 'Dallas, TX',
+        img: img_PE
+      },
+      {
+        name: 'Fort Collins shame.',
+        city: 'Fort Collins, CO',
+        img: img_Shm
+      },
+      {
+        name: 'Boston Slow White',
+        city: 'Boston, MA',
+        img: img_SW
+      },
+      {
+        name: 'Boston Snake Country',
+        city: 'Boston, MA',
+        img: img_SC
+      },
+      {
+        name: 'DC Space Heater',
+        city: 'Washington, DC',
+        img: img_SH
+      },
+      {
+        name: 'Asheville Superlame',
+        city: 'Asheville, NC',
+        img: img_SL
+      },
+      {
+        name: 'Durham Toro',
+        city: 'Durham, NC',
+        img: img_Toro
+      },
+      {
+        name: 'Boston Wild Card',
+        city: 'Boston, MA',
+        img: img_WC
+      }
+    ]
+
+    const [teams, setTeams] = useState(teamData)
+
+    const createCards = () => {
+      let cardRows = []
+      for (var i = 0; i < teams.length; i++) {
+          //console.log(props.fields[i])
+          let team = teams[i]
+          cardRows.push(<Card 
+                          clubName={team.name} 
+                          key={i} 
+                          city={team.city}
+                          img={team.img}
+                          />)
+      }
+      return cardRows
+  }
 
 
     return (
         <div className="board">
-            <Card 
-              clubName='AMP'
-              city='Philadelphia, PA'
-              img={AMP}
-            />
+            {createCards()}
            
         </div>
     )

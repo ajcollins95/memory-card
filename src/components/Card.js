@@ -9,9 +9,16 @@ const Card = (props) => {
     const img = props.img;
 
     return (
-        <div className="board">
-            <h2>cards here</h2>
-           
+        <div className="card">
+            <div className='logo'>
+                <img src={img}></img>
+            </div>
+            <div className="name">
+                <h4>{clubName}</h4>
+            </div>
+            <div className='city'>
+                <p>{city}</p>
+            </div>           
         </div>
     )
 }

@@ -4,6 +4,7 @@
     margin: auto;
     border: solid;
     border-color:aqua;
+    background-color: white;
 }
 
 img {
@@ -16,4 +17,8 @@ img {
     border: solid;
     border-color: red;
     width: 150px;
+}
+
+.card:hover {
+    background-color:lightcoral;
 }

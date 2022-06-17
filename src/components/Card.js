@@ -8,8 +8,12 @@ const Card = (props) => {
     const city = props.city;
     const img = props.img;
 
+    const handleClick = () => {
+        alert(props.clubName)
+    }
+
     return (
-        <div className="card">
+        <div className="card" onClick={props.onClick} >
             <div className='logo'>
                 <img src={img}></img>
             </div>

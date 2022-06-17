@@ -105,6 +105,34 @@ const Board = (props) => {
     ]
 
     const [teams, setTeams] = useState(teamData)
+    const [cachedTeams, setClickedTeams] = useState([])
+
+    const cardClick = (e) => {
+      //gets the club name of a card
+      let clickedTeam = e.currentTarget.children[1].firstChild.firstChild.data;
+      let isValidTeam = ! cachedTeams.includes(clickedTeam);
+      let score = props.score
+
+      if (isValidTeam) {
+        setClickedTeams(cachedTeams.concat(clickedTeam))
+        props.setScore(score + 1)
+        console.log('VALID');
+        console.log(cachedTeams)
+        
+      } else {
+        setClickedTeams([])
+        props.setHighScore(score)
+        props.setScore(0)
+        console.log('INVALID')
+        console.log(cachedTeams)
+      }
+
+      //shuffle array
+      let teamsCopy = teams.slice()
+      let shuffledTeams = teamsCopy.sort( () => Math.random() - 0.5)
+      setTeams(shuffledTeams)
+      
+    }
 
     const createCards = () => {
       let cardRows = []
@@ -116,6 +144,7 @@ const Board = (props) => {
                           key={i} 
                           city={team.city}
                           img={team.img}
+                          onClick={cardClick}
                           />)
       }
       return cardRows

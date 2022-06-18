@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.e372c958.css",
+    "main.js": "/react-gh-pages/static/js/main.fe8de642.js",
+    "static/js/787.d6a8b40f.chunk.js": "/react-gh-pages/static/js/787.d6a8b40f.chunk.js",
+    "static/media/Moondog_Logo.jpg": "/react-gh-pages/static/media/Moondog_Logo.67ffcc3e07c2c30adb56.jpg",
+    "static/media/SuperlameLogo.png": "/react-gh-pages/static/media/SuperlameLogo.a676fc32e8dc29e908e4.png",
+    "static/media/SpaceHeaterLogo.jpg": "/react-gh-pages/static/media/SpaceHeaterLogo.d8d327cda9cadfe2f1df.jpg",
+    "static/media/BFG_Logo.jpg": "/react-gh-pages/static/media/BFG_Logo.20d3abc1d1e73ff3be75.jpg",
+    "static/media/PublicEnemy_Logo.jpg": "/react-gh-pages/static/media/PublicEnemy_Logo.9ff2056823aa56f47108.jpg",
+    "static/media/shame.Logo_.jpg": "/react-gh-pages/static/media/shame.Logo_.9547fe31485d23641b5a.jpg",
+    "static/media/SlowWhiteLogo.jpg": "/react-gh-pages/static/media/SlowWhiteLogo.26ae67efd773fe12d338.jpg",
+    "static/media/SnakeCountryLogo.png": "/react-gh-pages/static/media/SnakeCountryLogo.f2dfbbbc43e17cdddd27.png",
+    "static/media/2018TCT_ColumbusCocktails-1.jpg": "/react-gh-pages/static/media/2018TCT_ColumbusCocktails-1.b5dc9c0f5d8d2fe6015c.jpg",
+    "static/media/WildCardLogo_Color.jpg": "/react-gh-pages/static/media/WildCardLogo_Color.cb8bfc5d0860c9dd9add.jpg",
+    "static/media/DragnThrustLogo.jpg": "/react-gh-pages/static/media/DragnThrustLogo.f1e92e49ab6311fe2e9d.jpg",
+    "static/media/MischiefLogo.png": "/react-gh-pages/static/media/MischiefLogo.974e76dc4ad4acbc632a.png",
+    "static/media/PolarBearsLogo.jpg": "/react-gh-pages/static/media/PolarBearsLogo.4d6fbe3ccd4fff0ae3e4.jpg",
+    "static/media/PhiladelphiaAMP.png": "/react-gh-pages/static/media/PhiladelphiaAMP.e1d898f10dd798597691.png",
+    "index.html": "/react-gh-pages/index.html",
+    "main.e372c958.css.map": "/react-gh-pages/static/css/main.e372c958.css.map",
+    "main.fe8de642.js.map": "/react-gh-pages/static/js/main.fe8de642.js.map",
+    "787.d6a8b40f.chunk.js.map": "/react-gh-pages/static/js/787.d6a8b40f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e372c958.css",
+    "static/js/main.fe8de642.js"
+  ]
+}

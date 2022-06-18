@@ -9,7 +9,10 @@ const Header = (props) => {
 
     return (
         <div className="header">
-            <h1>Mixed Ultimate Memory Game</h1>
+            <div className="info">
+                <h1>Mixed Ultimate Memory Game</h1>
+                <h3>Get points by clicking on a team, but don't click on any more than once!</h3>
+            </div>
             <div className="scoreboard">
                 <p>Current Score: {props.score} </p>
                 <p>High Score: {props.highScore} </p>

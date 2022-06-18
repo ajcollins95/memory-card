@@ -1,9 +1,7 @@
 .logo {
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border: solid;
-    border-color:aqua;
+    width: 150px;
+    height: 150px;
+    margin: 25px auto;
     background-color: white;
 }
 
@@ -13,12 +11,18 @@ img {
 }
 
 .card {
-    margin: 25px;
-    border: solid;
-    border-color: red;
-    width: 150px;
+    margin: 25px 25px;
+    border: none;
+    border-radius: 5px;
+    width: 20%;
+    background-color: white;
+    box-shadow: 0px 0px 2px black;
+}
+
+h4 {
+    font-size: large;
 }
 
 .card:hover {
-    background-color:lightcoral;
+    box-shadow: 0px 0px 5px black;
 }
